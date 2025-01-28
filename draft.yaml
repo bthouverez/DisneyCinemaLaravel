@@ -1,0 +1,7 @@
+models:
+  Book:
+    title: string
+    status: integer
+    image: string
+    link: string
+

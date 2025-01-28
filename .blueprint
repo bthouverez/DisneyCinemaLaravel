@@ -1,0 +1,7 @@
+created:
+    - database/factories/BookFactory.php
+    - database/migrations/2025_01_26_004347_create_books_table.php
+    - app/Models/Book.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string nullable', current_team_id: 'integer nullable', profile_photo_path: 'string nullable', two_factor_secret: 'text nullable', two_factor_recovery_codes: 'text nullable', two_factor_confirmed_at: 'datetime nullable' }
+    Book: { title: string, status: integer, image: string, link: string }

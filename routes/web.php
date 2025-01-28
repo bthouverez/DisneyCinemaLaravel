@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', \App\Livewire\Gallery\Index::class);
+
+Route::get('/scrap', [\App\Livewire\Gallery\Index::class, 'scrap']);
 
 Route::middleware([
     'auth:sanctum',
