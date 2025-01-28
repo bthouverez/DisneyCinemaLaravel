@@ -45,6 +45,11 @@ class Index extends Component
         }
     }
 
+    public function delete(Book $book)
+    {
+        $book->delete();
+    }
+
     public function scrapePage($url) {
         $browser = new HttpBrowser(HttpClient::create());
         $crawler = $browser->request("GET", $url);

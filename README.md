@@ -40,7 +40,11 @@ Pour permettre aux administrateurs de modifier la liste des livres.
    ```
 
 ### Scraper la page
-Les données sont issues du site d'Hachette. L'application scrape ce site pour mettre à jour sa base de données.
+Les données sont issues du site d'Hachette Heroes à l'adresse suivante :
+   ```sh
+   https://www.hachetteheroes.com/theme/25/disney-cinema
+   ```
+L'application scrape ce site pour mettre à jour sa base de données. Pour cela, il suffit de lancer l'url suivante :
    ```sh
    http://localhost/scrap
    ```

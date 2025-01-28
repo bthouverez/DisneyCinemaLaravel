@@ -23,7 +23,8 @@
                                 <option value="unpossessed" {{ $status == 'unpossessed' ? 'selected' : '' }}>Non possédé</option>
                                 <option value="possessed" {{ $status == 'possessed' ? 'selected' : '' }}>Possédé</option>
                                 <option value="wanted" {{ $status == 'wanted' ? 'selected' : '' }}>Souhaité</option>
-                            </select>
+                            </select><br>
+                            <button class="rounded px-4 py-2 bg-red-600 text-white hover:bg-red-700 mt-2 hover:cursor-pointer" wire:click="delete({{ $book }})" wire:confirm="Supprimer ?">Supprimer</button>
                         @endif
                 </div>
             @endforeach
