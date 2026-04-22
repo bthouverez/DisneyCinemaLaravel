@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->integer('status');
             $table->string('image');
-            $table->string('link');
+            $table->string('isbn')->unique();
+            $table->string('link')->unique();
             $table->timestamps();
         });
     }

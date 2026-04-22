@@ -19,6 +19,7 @@ class Book extends Model
         'status',
         'image',
         'link',
+        'isbn',
     ];
 
     /**
